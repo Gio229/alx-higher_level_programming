@@ -10,17 +10,34 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *current;
+	listint_t *temp;
+	listint_t *currentTemp;
+	int addressVal;
 
+	temp = NULL;
 	current = list;
+
 
 	while (current != NULL)
 	{
+		addressVal = (long int) current;
+		add_nodeint(&temp, addressVal);
 		current = current->next;
-		if (current == list)
+		currentTemp = temp;
+		addressVal = (long int) current;
+
+		while (currentTemp != NULL)
 		{
-			return (1);
+
+			if (currentTemp->n == addressVal)
+			{
+				free_listint(temp);
+				return (1);
+			}
+			currentTemp = currentTemp->next;
 		}
 	}
+	free_listint(temp);
 
 	return (0);
 }
