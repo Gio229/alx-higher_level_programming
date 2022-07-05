@@ -6,7 +6,7 @@ def uppercase(str):
         cpt += 1
         if ord(c) > 96 and ord(c) < 123:
             print(
-                "{}".format(chr(ord(c) - 20)),
+                "{}".format(chr(ord(c) - 32)),
                 end="\n" if (cpt == length) else ""
                 )
         else:
