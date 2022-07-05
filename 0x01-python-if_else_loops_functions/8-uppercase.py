@@ -5,12 +5,12 @@ def uppercase(str):
     for c in str:
         cpt += 1
         if ord(c) > 96 and ord(c) < 123:
-            if cpt == length:
-                print("{}".format(chr(ord(c) - 20)))
-            else:
-                print("{}".format(chr(ord(c) - 20)), end='')
+            print(
+                "{}".format(chr(ord(c) - 20)),
+                end="\n" if (cpt == length) else ""
+                )
         else:
-            if cpt == length:
-                print("{}".format(c))
-            else:
-                print("{}".format(c), end='')
+            print(
+                "{}".format(c),
+                end="\n" if (cpt == length) else ""
+                )
