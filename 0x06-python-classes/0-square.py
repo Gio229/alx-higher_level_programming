@@ -2,4 +2,7 @@
 
 
 class Square:
+    """
+    A empty class
+    """
     pass
