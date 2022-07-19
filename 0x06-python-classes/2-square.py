@@ -8,7 +8,7 @@ class Square:
     """
     This class is a class to define suare object
     """
-    def __init__(self, size):
+    def __init__(self, size=0):
         """initialization function (constructor)
             size (integer): square size
         """
