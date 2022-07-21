@@ -102,10 +102,9 @@ class Square:
         string representation of the object
         """
         string = ""
-
         for j in range(self.__position[1]):
-                string += "\n"
+            string += "\n"
         for i in range(self.__size):
             string += " " * self.__position[0]
-            string += "#" * self.__size) + "\n"
-        return string 
+            string += "#" * self.__size)
+        return string
