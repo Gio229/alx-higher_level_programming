@@ -76,7 +76,7 @@ class SinglyLinkedList:
             current = self.__head
             previous = current
             while current.next_node is not None:
-                if ( value <= current.data):
+                if (value <= current.data):
                     break
                 previous = current
                 current = current.next_node
