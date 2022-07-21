@@ -21,7 +21,7 @@ class Square:
 
         if len(position) == 2:
             if (type(position[0]) == int and
-                type(position[1]) == int):
+                    type(position[1]) == int):
                 if (position[0] >= 0 and position[1] >= 0):
                     self.__position = position
                 else:
@@ -33,7 +33,6 @@ class Square:
         else:
             raise TypeError("position must be a"
                             "tuple of 2 positive integers")
-
 
     def area(self):
         """
