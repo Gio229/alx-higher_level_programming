@@ -2,6 +2,7 @@
 """
 This module defines class MagicClass
 """
+import math
 
 
 class MagicClass:
