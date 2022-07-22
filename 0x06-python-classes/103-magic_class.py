@@ -12,7 +12,7 @@ class MagicClass:
         """
         constructor
         """
-        if type(radius) is not and type(radius) is not float:
+        if type(radius) is not int and type(radius) is not float:
             raise TypeError("radius must be a number")
         else:
             sel.__radius = radius
